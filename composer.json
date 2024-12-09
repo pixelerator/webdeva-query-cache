@@ -1,0 +1,26 @@
+{
+    "name": "webdeva/query-cache",
+    "description": "querycachec plugin",
+    "autoload": {
+        "psr-4": {
+            "Webdeva\\QueryCache\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohammad Khan",
+            "email": "admin@webdeva.in"
+        }
+    ],
+    "require": {
+       "php": ">=7.4",
+        "illuminate/database": "^10.0"
+    },
+    "extra": {
+    "laravel": {
+      "providers": [
+        "Webdeva\\QueryCache\\QueryCacheServiceProvider"
+      ]
+    }
+  }
+}
