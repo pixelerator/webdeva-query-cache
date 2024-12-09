@@ -1,6 +1,3 @@
-Here's the properly formatted README file ready for direct use:
-
----
 
 # Query Cache Package
 
@@ -128,4 +125,3 @@ This package is open-source software licensed under the [MIT license](LICENSE).
 Developed and maintained by **Mohammad Khan** ([admin@webdeva.in](mailto:admin@webdeva.in)).
 
 ---
-
