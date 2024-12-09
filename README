@@ -1,10 +1,11 @@
-Here's a full README file for your package without requiring an additional configuration file:
+Here's the properly formatted README file ready for direct use:
 
 ---
 
 # Query Cache Package
 
 ## Description
+
 `webdeva/query-cache` is a Laravel package that provides an easy way to cache Eloquent query results automatically. This package leverages Laravel's cache system to enhance performance by reducing database queries.
 
 ---
@@ -12,6 +13,7 @@ Here's a full README file for your package without requiring an additional confi
 ## Installation
 
 ### Step 1: Install via Composer
+
 Run the following command to include the package in your Laravel project:
 
 ```bash
@@ -19,6 +21,7 @@ composer require webdeva/query-cache
 ```
 
 ### Step 2: Add the Trait to Your Models
+
 To enable query caching for a specific model, include the `QueryCacheable` trait in your model:
 
 ```php
@@ -38,6 +41,7 @@ class Post extends Model
 ## Usage
 
 ### Caching Queries
+
 Once the trait is applied to a model, you can cache query results by calling the `cacheQuery` method on the query builder:
 
 ```php
@@ -47,6 +51,7 @@ $posts = Post::query()->cacheQuery();
 The query result will be cached for **1 hour** (3600 seconds) by default.
 
 ### Flushing Cache
+
 You can manually clear the cache for a specific query or model by calling the `flushQueryCache` method:
 
 ```php
@@ -88,13 +93,17 @@ class Post extends Model
 ## Advanced Example
 
 ### Query with Filters
+
 The caching mechanism works seamlessly with filtered queries:
+
 ```php
 $filteredPosts = Post::where('status', 'published')->cacheQuery();
 ```
 
 ### Dynamic Cache Tags
+
 You can assign specific tags for cache management:
+
 ```php
 Post::flushQueryCache(['posts', 'published']);
 ```
@@ -120,4 +129,3 @@ Developed and maintained by **Mohammad Khan** ([admin@webdeva.in](mailto:admin@w
 
 ---
 
-Feel free to customize this README further to suit your style or project-specific requirements!
